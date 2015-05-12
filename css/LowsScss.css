@@ -1,0 +1,96 @@
+﻿
+/*first page text*/
+section article {
+    position: absolute;
+    z-index: 4;
+    width: 80%;
+    left: 5%;
+}
+
+#Intorduction content h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #FEDC54 !important;
+}
+
+#Intorduction content p {
+    position: relative;
+    font-size: 24px;
+    width: 50%;
+    color: #FEDC54 !important;
+    padding: 10px 10px 10px 10px;
+    /*background-color: rgba(255,255,255, 0.1);*/
+    opacity: 0;
+}
+
+/*#Intorduction content > p:nth-child(2) {
+    top: 50px;
+    left: 50px;
+}
+
+#Intorduction content > p:nth-child(3) {
+    top: 200px;
+    left: 300px;
+}
+
+#Intorduction content > p:nth-child(4) {
+    top: 300px;
+    left: 3%;
+}
+
+#Intorduction content > p:nth-child(5) {
+    top: 350px;
+    left: 40%;
+}
+
+#Intorduction content > p:nth-child(6) {
+    top: 350px;
+    left: 20%;
+}
+
+#Intorduction content > p:nth-child(7) {
+    top: 400px;
+    left: 2%;
+}
+
+#Intorduction content > p:nth-child(8) {
+    top: 500px;
+    left: 10%;
+    width: 80% !important;
+}*/ 
+
+
+.box {
+    padding: 3% 0;
+    position: relative;
+    margin: 100px auto;
+    width: 70%;
+    text-align: center;
+    /*color: #EFCF4F;*/
+    /*background-color: rgba(255,255,255, 0.4);*/
+    background-color: #620000;
+    color: white;
+    /*color: #EFCF4F;*/
+    -webkit-box-shadow: 1px 1px 5px 0 #363636;
+    -moz-box-shadow: 1px 1px 5px 0 #363636;
+    -o-box-shadow: 1px 1px 5px 0 #363636;
+    -ms-box-shadow: 1px 1px 5px 0 #363636;
+    font-size: 2em;
+}
+
+
+.animate-hover {
+    display: inline-block;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+}
+
+    .animate-hover:hover {
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+    }
+/*# sourceMappingURL=main.css.map */

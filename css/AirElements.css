@@ -1,0 +1,279 @@
+﻿#elementsTimeLine {
+    /*width: 920px;*/
+    /*left: 50%;*/
+    margin-left: 100px;
+    height: 600px;
+    z-index: 300;
+    top: 120px;
+    position: absolute;
+}
+
+
+
+#yearsTimeLine {
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+}
+
+    #yearsTimeLine > span {
+        position: relative;
+        height: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+/*balls move*/
+
+#balls {
+    width: auto;
+    height: 460px;
+}
+
+
+
+@keyframes animation1 {
+    0% {
+        transform: scale(1) translate(0px);
+    }
+
+    100% {
+        transform: scale(1.2) translate(10px);
+    }
+}
+
+@-moz-keyframes animation1 {
+    0% {
+        -moz-transform: scale(1) translate(0px);
+    }
+
+    100% {
+        -moz-transform: scale(1.2) translate(10px);
+    }
+}
+
+@-webkit-keyframes animation1 {
+    0% {
+        -webkit-transform: scale(1) translate(0px);
+    }
+
+    100% {
+        -webkit-transform: scale(1.2) translate(10px);
+    }
+}
+
+
+#balls > div {
+    z-index: 200;
+    min-height: 50px;
+    min-width: 50px;
+    position: absolute;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+
+.animativeBalls {
+    transition: 500ms ease 0ms;
+    animation-name: animation1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -moz-transition: 500ms ease 0ms;
+    -moz-animation-name: animation1;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -webkit-transition: 500ms ease 0ms;
+    -webkit-animation-name: animation1;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+    .animativeBalls:hover {
+        animation-name: none;
+        transform: scale(1.6);
+        -moz-animation-name: none;
+        -moz-transform: scale(1.6);
+        -webkit-animation-name: none;
+        -webkit-transform: scale(1.6);
+    }
+
+
+
+#balls > div:nth-child(even) {
+    animation-delay: 0ms;
+    -moz-animation-delay: 0ms;
+    -webkit-animation-delay: 0ms;
+}
+
+#balls > div:nth-child(odd) {
+    animation-delay: 250ms;
+    -moz-animation-delay: 250ms;
+    -webkit-animation-delay: 250ms;
+}
+
+
+/*balls move*/
+
+
+/*element text*/
+#elementText {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    /*border: 1px solid black;*/
+    right: 0;
+    top: 500px;
+    visibility: hidden;
+    border-top-left-radius: 30px;
+    text-align: center;
+    color: black !important;
+}
+
+#elementText {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+    #elementText h1 {
+        color: black !important;
+        margin: 0 auto !important;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    #elementText p {
+        border-top: 1px solid black;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    #elementText a {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
+
+.closeInfo {
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+/*element text*/
+/*full data*/
+.ShowFull {
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+}
+/*full data*/
+
+
+/*typing*/
+
+#typingInfo {
+    left: 200px;
+    top: 30px;
+    position: absolute;
+    font-size: 24px;
+    line-height: 30px;
+    color: black;
+    max-width: 400px;
+}
+/*typing*/
+
+/*car*/
+#car {
+    left: 20px;
+    position: absolute;
+    bottom: 60px;
+}
+
+
+/*car popup*/
+
+
+#popup {
+    min-height: 25px;
+    position: absolute;
+    min-width: 180px;
+    max-width: 300px;
+    background: white;
+    z-index: 99999;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
+    -moz-box-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
+    -webkit-box-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
+    padding: 15px 10px;
+}
+
+    #popup:after, #popup:before {
+        content: "";
+        border-color: transparent;
+        border-style: solid;
+        border-width: 15px;
+        position: absolute;
+        left: 70px;
+    }
+
+    #popup:after {
+        border-top-color: white;
+        bottom: -30px;
+    }
+    /* shadow */
+    #popup:before {
+        border-width: 18px;
+        bottom: -36px;
+    }
+
+.close {
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    position: absolute;
+    cursor: pointer;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 1px 3px 2px 3px;
+    text-align: center;
+    opacity: 1 !important;
+}
+
+/*car*/
+
+/*arrows*/
+
+.leftArrow {
+    left: 10px;
+}
+
+.arrows {
+    position: absolute;
+    top: 400px;
+    cursor: pointer;
+}
+
+.rightArrow {
+    right: 10px;
+}
+/*arrows*/
