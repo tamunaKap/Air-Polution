@@ -1,151 +1,336 @@
-﻿<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>სუნთქვაშეკრული ქალაქი</title>
-    <script src="scripts/jquery-2.1.3.js"></script>
-     
-    <script src="scripts/Elements.js"></script>
-    <script src="scripts/bootstrap.js"></script>
+    <title>მძიმე ჰაერი</title>
+    <script src="boostatrap/scripts/jquery-1.9.1.js"></script>
+    <script src="scripts/vendor/modernizr.custom.js"></script>
+    <script src="scripts/jquery.boxloader.min.js"></script>
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="boostatrap/Content/bootstrap.css" rel="stylesheet" />
+    <script src="scripts/main.js"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="css/Elements.css" rel="stylesheet" />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href='http://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!--<link href="styles/normalize.css" rel="stylesheet" />-->
+    <link href="styles/mainAdvice.css" rel="stylesheet" />
+    <link href="styles/demo_styles.css" rel="stylesheet" />
+    <link href="styles/demo1.css" rel="stylesheet" />
 
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="scripts/charts.js"></script>
-    <link href="css/LowsScss.css" rel="stylesheet" />
-    <link href="css/AirElements.css" rel="stylesheet" />
-
-
-    <!--<script src="scripts/DraggingElements.js"></script>
-    <link href="css/DraggingElements.css" rel="stylesheet" />-->
 </head>
-
 <body>
-    <script src="scripts/highcharts.js"></script>
+    <section id="loader">
+        <div class="jar">
+            <div class="mouth"></div>
+            <div class="neck"></div>
+            <div class="base">
+                <div class="liquid"> </div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <p>იტვირთება.....</p>
+    </section>
 
-    <script src="scripts/exporting.js"></script>
+    <!--<div class="container body-content">-->
+    <section id="Introduction">
+        <div class="row">
+            <article class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+                <audio controls="controls" hidden id="audio" loop>
+                    <source src="breath.wav" />
+                </audio>
+
+                <h1>მძიმე ჰაერი</h1>
+                <p class="box" id="box1">ყოველწლიურად მსოფლიოში 7 მილიონი ადამიანის ნაადრევ სიკვდილს დაბინძურებული ჰაერი იწვევს.</p>
+                <p class="box" id="box2"> საღამოობით თბილისს თხელი ნისლი ეფინება. ეს ტრანსპორტის გამონაბოლქვია, რომლის წილი დედაქალაქის ჰაერის დაბინძურებაში 95%-ა. </p>
+                <p class="box" id="box3">ჰაერის დაბინძურება იწვევს სიმსივნეს.</p>
+                <p class="box" id="box4">თუმცა, ვიდრე არ არსებობს კვლევა, მეცნიერები გახშირებული დაავადებების ჰაერის დაბინძურებასთან კავშირზე, საქართველოში მხოლოდ ვარაუდობენ. </p>
+                <p class="box" id="box5">საქართველოში მილიონამდე ავტომობილია რეგისტრირებული. აქედან 900 ათასამდე მანქანა ათზე მეტი წლისაა. </p>
+                <p class="box" id="box6">2004 წლიდან მანქანები ტექნიკურად აღარ მოწმდება. ტექნიკური დათვალიერების შემოღება 2017 წლის ბოლოსაა დაგეგმილი.</p>
+                <p class="box" id="box7">ჩვენ ვირჩევთ მეგობრებს, პროფესიას, საკვებს, ტანსაცმელს, სახლს, სადაც ვიცხოვრებთ. მაგრამ ვსუნთქავთ ჰაერს, რომელსაც სუნთქავს ქალაქი.</p>
+                <aside data-nextpageid="PolutionContent">
+                    <img src="images/isari.png" />
+                </aside>
+            </article><div class="sound">
+                <img src="images/soundOn.png" />
+            </div>
+        </div>
+
+    </section>
+    <section id="PolutionContent">
+        <article>
+            <div class="row ">
+                <div id="elementsTimeLine">
+                    <div id="balls">
+
+                    </div>
+
+                    <div id="yearsTimeLine">
+                    </div>
+
+                    <div id="elementText">
+                        <img src="images/close.png" class="closeInfo" />
+                    </div>
+                    <img src="images/fullData.png" class="ShowFull" />
+                    <div id="typingInfo">
+
+                    </div>
+
+                    <div id="popup">
+                        <div class="closeCar">X</div>
+                        <div class="content">1234</div>
+                    </div>
+                    <img src="images/car.png" id="car" />
+                    <div style="margin-top:100px;   text-align:center;" id="country">
+                        <p style="font-size:20px;"> <span style="cursor:pointer"><</span> <span>თბილისი </span><span style="cursor:pointer">></span> </p>
+                    </div>
+                </div>
 
 
-    <section id="Intorduction" class="container">
-        <article style="color:white">
-            <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-
-            <br />
-            <!--<h1>სუნთქვაშეკრული ქალაქი</h1>-->
-            <content>
-                <h2>სუნთქვაშეკრული ქალაქი</h2>
-                <!--<p>ყოველწლიურად მსოფლიოში 7 მილიონი ადამიანის ნაადრევ სიკვდილს დაბინძურებული ჰაერი იწვევს.</p>
-                <p> საღამოობით თბილისს თხელი ნისლი ეფინება. ეს ტრანსპორტის გამონაბოლქვია, რომლის წილი დედაქალაქის ჰაერის დაბინძურებაში 95%-ა. </p>
-                <p>ჰაერის დაბინძურება იწვევს სიმსივნეს.</p>
-                <p>თუმცა, ვიდრე არ არსებობს კვლევა, მეცნიერები გახშირებული დაავადებების ჰაერის დაბინძურებასთან კავშირზე, საქართველოში მხოლოდ ვარაუდობენ. </p>
-                <p>საქართველოში მილიონამდე ავტომობილია რეგისტრირებული. აქედან 900 ათასამდე მანქანა ათზე მეტი წლისაა. </p>
-                <p>2004 წლიდან მანქანები ტექნიკურად აღარ მოწმდება. ტექნიკური დათვალიერების შემოღება 2017 წლის ბოლოსაა დაგეგმილი.</p>
-                <p>ჩვენ ვირჩევთ მეგობრებს, პროფესიას, საკვებს, ტანსაცმელს, სახლს, სადაც ვიცხოვრებთ. მაგრამ ვსუნთქავთ ჰაერს, რომელსაც სუნთქავს ქალაქი.  </p>-->
-            </content>
-            <div class="box" id="box1">
-                <span>ყოველწლიურად მსოფლიოში 7 მილიონი ადამიანის ნაადრევ სიკვდილს დაბინძურებული ჰაერი იწვევს.</span>
             </div>
-            <div class="box" id="box2">
-                <span>საღამოობით თბილისს თხელი ნისლი ეფინება. ეს ტრანსპორტის გამონაბოლქვია, რომლის წილი დედაქალაქის ჰაერის დაბინძურებაში 95%-ა.</span>
-            </div>
-            <div class="box" id="box3">
-                <span>ჰაერის დაბინძურება იწვევს სიმსივნეს.</span>
-            </div>
-            <div class="box" id="box4">
-                <span>თუმცა, ვიდრე არ არსებობს კვლევა, მეცნიერები გახშირებული დაავადებების ჰაერის დაბინძურებასთან კავშირზე, საქართველოში მხოლოდ ვარაუდობენ.</span>
-            </div>
-            <div class="box" id="box5">
-                <span>საქართველოში მილიონამდე ავტომობილია რეგისტრირებული. აქედან 900 ათასამდე მანქანა ათზე მეტი წლისაა.</span>
-            </div>
-            <div class="box" id="box6">
-                <span>2004 წლიდან მანქანები ტექნიკურად აღარ მოწმდება. ტექნიკური დათვალიერების შემოღება 2017 წლის ბოლოსაა დაგეგმილი.</span>
-            </div>
-            <div class="box" id="box7">
-                <span>ჩვენ ვირჩევთ მეგობრებს, პროფესიას, საკვებს, ტანსაცმელს, სახლს, სადაც ვიცხოვრებთ. მაგრამ ვსუნთქავთ ჰაერს, რომელსაც სუნთქავს ქალაქი. </span>
-            </div>
-
         </article>
+    </section>
+    <section id="desease">
+        <article>
+            <div class="row">
+                <div id="desease1" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div><p>რა აბინძურებს ჰაერს?</p></div>
+                    <div id="reazons" data-reasonid="0" class="col-lg-push-2 col-md-push-2 col-lg-8 col-md-8 col-xs-12 col-sm-12 " style="text-align:center">
+                        <div>
+                            <p> </p>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <img src="" />
+                            </div>
+                        </div>
+                        <div style="color:white; margin-top:40px;">
+                            სხვა?
+                            <img src="images/rightArrow.png" style="cursor:pointer" class="nextReason" />
+                        </div>
 
-        <div class="  ">
-            <div class="arrow-down" id="arrow">
-                <div class=" left"></div>
-                <div class="right"></div>
+                    </div>
+                    <div id="carsLine">
+                        <img src="images/carsLinedust.png" />
+                    </div>
+                    <div id="result" class="result" data-nextdivid="desease2">
+                        <p> შედეგი </p>
+                        <img src="images/arrowDown.png" />
+                    </div>
+                </div>
+                <div id="desease2" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div>
+                        <p>
+                            საქართველოში ბენზოლის დასაშვები ნორმა <span>სამჯერ</span>, ნახშირწყალბადის <span>ერთნახევარჯერ</span>,
 
+                            გოგირდის ნორმა კი <span>თხუთმეტჯერ</span> აღემატება ევროპულ სტანდარტს
+                        </p>
+                    </div>
+                    <div class="compare col-lg-8 col-sm-8 col-xs-12 col-sm-12 col-lg-push-2 col-md-push-2">
+                        <!--<div class="closeComparizon"> X </div>-->
+                        <div class="col-lg-12 col-sm-12 col-xs-12 col-sm-12 ">
+                            <img src="images/europe.png" style="float:left" />
+                            <img src="images/Georgia.png" style="float:right" />
+                        </div>
+                        <div class="col-lg-12 col-sm-12 col-xs-12 col-sm-12 ">
+                            <div class="EuropeData">
+                                <p>0.005</p>
+                                <p>0.3</p>
+                                <p>3</p>
+                                <p>0.01</p>
+                            </div>
+                            <div class="GeorgiaData">
+                                <p>0.0005</p>
+                                <p>0.12</p>
+                                <p>0.125</p>
+                                <p>0.025</p>
+                            </div>
+                            <div class="ComparingElements">
+                                <div class="center-block"><p>SO2</p></div>
+                                <div class="center-block"><p>NO2</p></div>
+                                <div class="center-block"><p>CO</p></div>
+                                <div class="center-block"><p>PM</p></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-xs-12 col-sm-12 result" style="text-align:center;cursor:pointer" data-nextdivid="desease3">
+                        <p>შედეგად</p>
+                        <img src="images/arrowDown.png" />
+                    </div>
+                </div>
+                <div id="desease3" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div>
+                        <p>
+                            სასუნთქი სისტემების ავადმყოფობების რაოდენობა 2001 წლიდან დღემდე, დაახლოებით, <span>4-ჯერ გაიზარდა</span>.
+                            <br />
+                            <br />
+                            სისხლისა და სისხლმაბდი ორგანოების ავადმყოფობების რიცხვმა <span> 2-ჯერ მოიმატა</span>.
+                            <br />
+                            <br />
+                            სისხლის მიმოქცევის სისტემის ავადმყოფობების მაჩვენებელი <span> 3.5-ჯერ გაიზარდა</span>.
+                            <br />
+                            <br />
+                            თვალისა და მისი დანამატების ავადმყოფობების მაჩვენებლი დღეის მდგომარეობით <span> 3-ჯერ აღემატება</span> 2006 წელს დაფიქსირებულ შემთხვევებს.
+                            <br />
+                            <br />
+                            რაც შეეხება ნერვული სისტემისა და გრძნობათა ორგანოების დაავადებებს, ბოლო წლების მონაცემი არ ფიქსირდება. თუმცა, 2001-2005 წლებში რაოდენობა <span>
+                                1.5-ჯერ გაიზარდა.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-xs-12 col-sm-12 result" style="text-align:center;cursor:pointer" data-nextdivid="desease4">
+
+                        <img src="images/arrowDown.png" />
+                    </div>
+                </div>
+                <div id="desease4" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <!-- Demo Navigation -->
+                    <p>
+                        თითოეულ ჩვენგანს ყოველდღიურად შეუძლია, გარემოს/ჰაერს დაბინძურებისგან დაცვაში დაეხმაროს.
+                        <br />
+                        თუ რა შეუძლია თითოეულ ჩვენგანს ჰაერის დაბინძურების შესამცირებლად, აქ ნახავთ:
+                    </p>
+                    <nav class="nav clearfix">
+                        <button class="nav-el" id="el-topleft" data-id="ov-topleft">
+                            <img src="images/caar.png" />
+                        </button>
+                        <button class="nav-el" id="el-topright" data-id="ov-topright">
+                            <img src="images/tree.png" />
+                        </button>
+                        <button class="nav-el" id="el-btmleft" data-id="ov-btmleft">
+
+                            <img src="images/shopping.png" />
+                        </button>
+                        <button class="nav-el" id="el-btmright" data-id="ov-btmright">
+                            <img src="images/homeCare.png" />
+                        </button>
+                    </nav>
+                    <!-- Overlay (hidden by default)-->
+                    <section class="overlay" id="ov-topleft">
+                        <div class="wrap">
+                            <h1>მართე ავტომობილი ჭკვიანურად:</h1>
+                            <p>
+                                <ul>
+                                    <li>   შეინახეთ სათანადოდ გაბერილი საბურავები.</li>
+                                    <li>
+                                        თუკი ფასტ ფუდის შეძენას გეგმავთ, ან ბანკის რიგში დგახართ, უმჯობესია, მანქანა პარკინგზე გააჩეროთ, თვითონ კი საქმეს მიხედოთ.
+                                    </li>
+                                    <li>
+                                        გამოიყენეთ საზოგადოებრივი ტრანსპორტი, იარეთ ფეხით, ან ველოსიპედით, როგორც კი ამის შესაძლებლობა მოგეცემათ.
+                                    </li>
+                                    <li>
+                                        რეგულარულად შეამოწმეთ, რამდენადაა თქვენი მანქანა ტექნიკურად გამართული.
+                                    </li>
+                                    <li>
+                                        გამოიყენეთ ტექნიკური ზეთი, რომელიც ასევე ენერგო ეფექტურია.
+                                    </li>
+
+
+                                </ul>
+                            </p>
+                        </div>
+                        <button class="close"><span class="mfg-cancel"></span></button>
+                    </section>
+                    <section class="overlay" id="ov-topright">
+                        <div class="wrap">
+                            <h1> ხე:</h1>
+                            <p>
+                                <ul>
+                                    <li>
+                                        შენობების ირგვლივ ხეების სწორად განლაგების შემთხვევაში ხეს შეუძლია, 30%-თ შეამციროს ჰაერის კონდინცირების საჭიროება. რითიც იმ ენერგიის 20-50% დაიზოგება, რაც გათბობაზე იხარჯებოდა.
+
+                                    </li>
+                                    <li>
+                                        ახალგაზრდა, ჯანმრთელი ხე ზუსტად იმდენ ჰაერს გამოჰყოფს, რამდენსაც ათი ჰაერის კონდინციონერი, რომელიც დღეში ოცამდე საათს მუშაობს.
+                                    </li>
+                                    <li>
+                                        1 დღეში 1 დიდ ხეს შეუძლია ხმელეთიდან შეიწოვოს 380-ამდე ლიტრი წყალი და გარდაქმნას ის ჟანგბადად.
+                                    </li>
+                                    <li>
+                                        ხეები ამცირებს ხმაურს, მისი ჩრდილი კი იცავს ასფალტს მზის დაზიარებისაგან.
+                                    </li>
+                                    <li>
+                                        მცენარეები და მწვანე საფარის საშუალებით მცირდება წყალდიდობები, უმჯობესდება წყლის ხარისხი.
+                                    </li>
+                                    <li>
+                                        სეზონურად, განსაკუთრებით კი შემოდგომაზე, როცა მიწის ზედაპირი ფოთლებითაა დაფარული, ადამიანები მათ ერთად აგროვებენ და წვავენ. ამ დროს ფოთლების დიდი ნაწილი ტენიანია. არასრული წვა მიმდიარეობს და ამ დროს ამოყოფილი კვამლი დიდი რაოდენობით შხამიან ნივთიერებას შეიცავს.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <button class="close"><span class="mfg-cancel"></span></button>
+                    </section>
+                    <section class="overlay" id="ov-btmleft">
+                        <div class="wrap">
+                            <h1>ივაჭრე ჭკვიანურად:</h1>
+                            <p>
+                                <ul>
+                                    <li> შეიძინეთ ენერგო ეფექტური პროდუქცია.</li>
+                                    <li>  შეარჩიეთ ეფექტური მოდელები, რომელიც გარემოს მინიმალურად აბინძურებს.</li>
+                                    <li>ისეთი პროდუქცია შეარჩიეთ, რომელიც ნაკლებშეფუთულია და მისი მეორედ გამოყენებაც შეიძლება.</li>
+                                    <li>შოპინგებისას გამოიყენეთ ნაჭრის ჩანთა, ქაღალდის ან პოლიეთინელიც ცელოფნის ნაცვლად.</li>
+                                    <li>ხშირი მოხმარების შემთხვევაში, უმჯობესია ბატარიების შეძენა, რომლებიც იტენება.</li>
+
+
+                                </ul>
+                            </p>
+                        </div>
+                        <button class="close"><span class="mfg-cancel"></span></button>
+                    </section>
+                    <section class="overlay" id="ov-btmright">
+                        <div class="wrap">
+                            <h1>სახლში:</h1>
+                            <p>
+                                <ul>
+                                    <li>
+                                        შეინახეთ ენერგია - აუცილებლად გამორთეთ ოთახში განათება და ელექტრო მოწყობილობები.
+                                    </li>
+                                    <li>
+                                        გადაამუშავეთ ფურცელი, პლასტმასი, შუშისა და ალუმინის ქილები (ამ გზით დაიზოგება ენერგია და შემცირდება ემისიები).
+                                    </li>
+                                    <li>
+                                        დარეგთ ხეები სახლის ირგვლივ, რომლის საშუალებითაც ზაფხულში სახლში სიგრილე დაისადგურებს. გასათვალისწინებელია, რომ ხემ ზამთარში ოთახში სინათლის შემოსვლას არ შეუშალოს ხელი.
+                                    </li>
+                                    <li>
+                                        შეიძინეთ ისეთი ნივთები, რასაც გამონაბოლქვი ნულოვანი ექნება.
+                                    </li>
+                                    <li>
+                                        თქვენი გარე განათება ტაიმერზე დააყენეთ ან გამოიყენეთ მზის ენერგია.
+                                    </li>
+                                    <li>
+                                        ტანსაცმელი თბილ ან ცივ წყალში გარეცხეთ, ცხელის ნაცვლად.
+                                    </li>
+                                    <li>
+                                        თქვენი წყლის გამაცხელებელი 49 გრადუსზე ნაკლებ ტემპერატურაზე დააყენეთ.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <button class="close"><span class="mfg-cancel"></span></button>
+                    </section>
+
+
+
+
+                </div>
             </div>
-        </div>
-
-        <div class="parallax" data-velocity="-.3"></div>
-
-
+        </article>
     </section>
-    <section id="PollutionReasons" class="container">
-        <div class="row ">
-            <div id="elementsTimeLine">
-                <div id="balls">
+    <footer>
 
-                </div>
+        <div style="float:left">
+            <h3>
+                პროექტზე მუშაობდნენ:
+            </h3>
+            <p>
+                ჟურნალისტი: თეონა გოდერძიშვილი
 
-                <div id="yearsTimeLine">
-                </div>
-
-                <div id="elementText">
-                    <img src="img/close.png" class="closeInfo" />
-                </div>
-                <img src="img/fullData.png" class="ShowFull" />
-                <div id="typingInfo">
-
-                </div>
-
-                <div id="popup">
-                    <div class="close">X</div>
-                    <div class="content">1234</div>
-                </div>
-                <img src="img/car.png" id="car" />
-                <div style="margin-top:150px;   text-align:center;" id="country">
-                    <p style="font-size:20px;"> <span style="cursor:pointer"><</span> <span>თბილისი </span><span style="cursor:pointer">></span> </p>
-                </div>
-            </div>
-
-
-            <!--<img src="img/leftar.png" class="arrows leftArrow"/>
-            <img src="img/rightar.png" class="arrows rightArrow" />-->
+            </p>
+            <p>
+                პროგრამისტები: თამუნა კაპანაძე & შოთა იორამაშვილი
+            </p>
         </div>
-
-    </section>
-
-    <section id="PollutionVideo" class="container">
-
-        <video autoplay poster="img/gaz_maskbig.jpg " id="bgvid" loop muted>
-            <source src="Pollution.mp4" type="video/mp4" />
-
-        </video>
-        <div id="polina">
-            <h1>Polina</h1>
-            <p>filmed by Alexander Wagner 2011
-            <p><a href="//demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
-            <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
-
-        </div>
-
-
-    </section>
-    <section class="container" id="footer" style="background-color:white">
-
-        <h3>
-            ჩვენს შესახებ
-        </h3>
-        <p>
-            პროექტზე მუშაობდნენ ....
-        </p>
-        <div class="story">
+        <div class="story" style="float:right; padding:20px 20px 20px ">
             <svg class="svg--source" width="0" height="0" aria-hidden="true">
 
                 <symbol id="svg--twitter" viewbox="0 -7 15 30">
@@ -181,124 +366,10 @@
 
         </div>
 
-    </section>
+    </footer>
+    <!--</div>-->
 
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/demo.js"></script>
 </body>
-
 </html>
-<script src="scripts/jquery.js"></script>
-<script src="scripts/jquery.boxloader.min.js"></script>
-<style>
-    video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-        background-size: cover;
-        transition: 1s opacity;
-    }
-
-    .stopfade {
-        opacity: .5;
-    }
-
-    #polina {
-        font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
-        font-weight: 100;
-        background: rgba(0,0,0,0.3);
-        color: white;
-        padding: 2rem;
-        width: 33%;
-        margin: 2rem;
-        float: right;
-        font-size: 1.2rem;
-    }
-
-    h1 {
-        font-size: 3rem;
-        text-transform: uppercase;
-        margin-top: 0;
-        letter-spacing: .3rem;
-    }
-
-    #polina button {
-        display: block;
-        width: 80%;
-        padding: .4rem;
-        border: none;
-        margin: 1rem auto;
-        font-size: 1.3rem;
-        background: rgba(255,255,255,0.23);
-        color: #fff;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: .3s background;
-    }
-
-        #polina button:hover {
-            background: rgba(0,0,0,0.5);
-        }
-
-    a {
-        display: inline-block;
-        color: #fff;
-        text-decoration: none;
-        background: rgba(0,0,0,0.5);
-        padding: .5rem;
-        transition: .6s background;
-    }
-
-        a:hover {
-            background: rgba(0,0,0,0.9);
-        }
-
-    @media screen and (max-width: 500px) {
-        div {
-            width: 70%;
-        }
-    }
-
-    @media screen and (max-device-width: 800px) {
-        html {
-            background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed;
-        }
-
-        #bgvid {
-            display: none;
-        }
-    }
-</style>
-<script>
-    var vid = document.getElementById("bgvid");
-    var pauseButton = document.querySelector("#polina button");
-
-    function vidFade() {
-        vid.classList.add("stopfade");
-    }
-
-    vid.addEventListener('ended', function () {
-        // only functional if "loop" is removed
-        vid.pause();
-        // to capture IE10
-        vidFade();
-    });
-
-
-    //pauseButton.addEventListener("click", function () {
-    //    vid.classList.toggle("stopfade");
-    //    if (vid.paused) {
-    //        vid.play();
-    //        pauseButton.innerHTML = "Pause";
-    //    } else {
-    //        vid.pause();
-    //        pauseButton.innerHTML = "Paused";
-    //    }
-    //})
-
-
-</script>
