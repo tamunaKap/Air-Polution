@@ -124,16 +124,17 @@ $(document).ready(function () {
     var clickedYearIndex = -1
     var carDustIndex = 0
     document.getElementById('audio').volume = 0.5;
-    $("body >section:not(:first-child),footer").hide();
-    setTimeout(function () {
-        $("#loader").fadeOut();
-        $("#loader").remove();
-        $("body >section:not(#loader), footer").fadeIn();
-        $("html").css("background-color", "white")
-        ElementRandomizer();
-        BoxAnimations()
-        document.getElementById('audio').play();
-    }, 5000)
+    //$("body >section:not(:first-child),footer ,nav").hide(); 
+    //setTimeout(function () {
+    //    $("#loader").fadeOut();
+    //    $("#loader").remove();
+    //    $("body >section:not(#loader), footer").fadeIn();
+    //    $("body >nav").fadeIn();
+    //    $("html").css("background-color", "white")
+    //    ElementRandomizer();
+    //    BoxAnimations()
+    //    document.getElementById('audio').play();
+    //}, 5000)
 
     $(".sound >img").click(function () {
         if ($(this).attr("src").indexOf("soundOn") != -1) {
